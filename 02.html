@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rectangle</title>
+</head>
+<script>
+    //클래스 생성
+    class Rectangle{
+        //클래스 틀 생성
+        constructor (width,height) {
+            this.width = width
+            this.height = height
+        }
+        //사각형 둘레 구하는 함수
+        getPerimeter (){
+            return 2 * (this.width + this.height)
+        }
+        //사각형 넓이 구하는 함수
+        getArea() {
+            return this.width * this.height
+        }
+    }
+    class Square {
+        constructor (length) {
+            this.length = length
+        }
+    
+        getPerimeter () {
+            return 4 * this.length
+        }
+
+        getArea () {
+            return this.length * this.length
+        }
+    }
+        //생성자
+        const square = new Square(10)
+        //출력
+        console.log(`사각형의 둘래 : ${square.getPerimeter()}`)
+        console.log(`사각형의 넓이 : ${square.getArea()}`)
+</script>
+<body>
+    
+</body>
+</html>
